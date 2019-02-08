@@ -1,9 +1,9 @@
 import msg from "./Message.js";
-import $ from 'jquery';
+window.onload = function(){
 
-$(function(){
-	$('#ShowBtn').on('click',function(){
-		var o = new msg();
-		o.show();
+	document.querySelector('#ShowBtn').addEventListener('click',function(){
+			const o = new msg();
+			o.show();
 	});
-});
+
+}
